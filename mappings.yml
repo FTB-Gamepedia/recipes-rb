@@ -1,0 +1,9 @@
+# Feel free to add more mappings. For other mods, create a new yaml file in the mappings directory.
+
+Items.bucket:
+  mod: "V"
+  name: "Bucket"
+
+Items.emerald:
+  mod: "V"
+  name: "Emerald"
