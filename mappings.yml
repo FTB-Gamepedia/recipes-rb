@@ -1,5 +1,7 @@
-# Feel free to add more mappings. For other mods, create a new yaml file in the mappings directory.
+# Feel free to add more mappings.
 
+# Vanilla
+# Items
 Items.bucket:
   mod: "V"
   name: "Bucket"
@@ -7,3 +9,18 @@ Items.bucket:
 Items.emerald:
   mod: "V"
   name: "Emerald"
+
+# Blocks
+
+# Add more mods here following the same syntax.
+
+SteamcraftItems.steamcraftCrafting:
+  mod: "FSP"
+  meta: true
+  names:
+    0: "Brass Piston"
+    1: "Wooden Stock"
+    2: "Iron Barrel"
+    3: "Blunderbuss Barrel"
+    4: "Flintlock"
+    5: "Brass Turbine"
