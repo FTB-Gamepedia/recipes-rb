@@ -27,7 +27,7 @@ module RecipeParsers
     end
 
     # Parses the ShapedOreRecipe into the Cg/Crafting Table recipe that can be put on the wiki. Prints it to the CL.
-    # @return [void]
+    # @return [String] The {{Cg/Crafting Table}} template generated.
     def parse
       actual_recipe = @recipe.split('new ShapedOreRecipe(')[1]
       # actual_recipe.gsub!(/\s/, '')
@@ -59,7 +59,7 @@ module RecipeParsers
             next
           end
           if ore =~ /ItemStack/
-            is = RecipeParsers::ItemStack.new(ore).parse
+            is = RecipeParsers::ItemStack.new(ore)
             if MAPPINGS.key?(is.item)
               @things[key] = is.gc(MAPPINGS[is.item])
             end
@@ -96,7 +96,7 @@ module RecipeParsers
         template << "|O=#{gc}\n"
       else
         if @output =~ /ItemStack/
-          is = RecipeParsers::ItemStack.new(@output).parse
+          is = RecipeParsers::ItemStack.new(@output)
           if MAPPINGS.key?(is.item)
             template << "|O=#{is.gc(MAPPINGS[is.item])}\n"
           end
@@ -107,7 +107,7 @@ module RecipeParsers
 
       template << '}}'
 
-      print "#{template}\nDone!\n"
+      template
     end
   end
 end
