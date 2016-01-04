@@ -2,15 +2,1576 @@
 
 # Vanilla
 # Items
-Items.bucket:
+Items.iron_shovel
+  mod: "V"
+  name: "Iron Shovel"
+
+Items.iron_pickaxe
+  mod: "V"
+  name: "Iron Pickaxe"
+
+Items.iron_axe
+  mod: "V"
+  name: "Iron Axe"
+
+Items.flint_and_steel
+  mod: "V"
+  name: "Flint and Steel"
+
+Items.apple
+  mod: "V"
+  name: "Apple"
+
+Items.bow
+  mod: "V"
+  name: "Bow"
+
+Items.arrow
+  mod: "V"
+  name: "Arrow"
+
+Items.coal
+  mod: "V"
+  meta: true
+  names:
+    0: "Coal"
+    1: "Charcoal"
+
+Items.diamond
+  mod: "V"
+  name: "Diamond"
+
+Items.iron_ingot
+  mod: "V"
+  name: "Iron Ingot"
+
+Items.gold_ingot
+  mod: "V"
+  name: "Gold Ingot"
+
+Items.iron_sword
+  mod: "V"
+  name: "Iron Sword"
+
+Items.wooden_sword
+  mod: "V"
+  name: "Wooden Sword"
+
+Items.wooden_shovel
+  mod: "V"
+  name: "Wooden Shovel"
+
+Items.wooden_pickaxe
+  mod: "V"
+  name: "Wooden Pickaxe"
+
+Items.wooden_axe
+  mod: "V"
+  name: "Wooden Axe"
+
+Items.stone_sword
+  mod: "V"
+  name: "Stone Sword"
+
+Items.stone_shovel
+  mod: "V"
+  name: "Stone Shovel"
+
+Items.stone_pickaxe
+  mod: "V"
+  name: "Stone Pickaxe"
+
+Items.stone_axe
+  mod: "V"
+  name: "Stone Axe"
+
+Items.diamond_sword
+  mod: "V"
+  name: "Diamond Sword"
+
+Items.diamond_shovel
+  mod: "V"
+  name: "Diamond Shovel"
+
+Items.diamond_pickaxe
+  mod: "V"
+  name: "Diamond Pickaxe"
+
+Items.diamond_axe
+  mod: "V"
+  name: "Diamond Axe"
+
+Items.stick
+  mod: "V"
+  name: "Stick"
+
+Items.bowl
+  mod: "V"
+  name: "Bowl"
+
+Items.mushroom_stew
+  mod: "V"
+  name: "Mushroom Stew"
+
+Items.golden_sword
+  mod: "V"
+  name: "Golden Sword"
+
+Items.golden_shovel
+  mod: "V"
+  name: "Golden Shovel"
+
+Items.golden_pickaxe
+  mod: "V"
+  name: "Golden Pickaxe"
+
+Items.golden_axe
+  mod: "V"
+  name: "Golden Axe"
+
+Items.string
+  mod: "V"
+  name: "String"
+
+Items.feather
+  mod: "V"
+  name: "Feather"
+
+Items.gunpowder
+  mod: "V"
+  name: "Gunpowder"
+
+Items.wooden_hoe
+  mod: "V"
+  name: "Wooden Hoe"
+
+Items.stone_hoe
+  mod: "V"
+  name: "Stone Hoe"
+
+Items.iron_hoe
+  mod: "V"
+  name: "Iron Hoe"
+
+Items.diamond_hoe
+  mod: "V"
+  name: "Diamond Hoe"
+
+Items.golden_hoe
+  mod: "V"
+  name: "Golden Hoe"
+
+Items.wheat_seeds
+  mod: "V"
+  name: "Seeds"
+
+Items.wheat
+  mod: "V"
+  name: "Wheat"
+
+Items.bread
+  mod: "V"
+  name: "Bread"
+
+Items.leather_helmet
+  mod: "V"
+  name: "Leather Cap"
+
+Items.leather_chestplate
+  mod: "V"
+  name: "Leather Tunic"
+
+Items.leather_leggings
+  mod: "V"
+  name: "Leather Pants"
+
+Items.leather_boots
+  mod: "V"
+  name: "Leather Boots"
+
+Items.chainmail_helmet
+  mod: "V"
+  name: "Chain Helmet"
+
+Items.chainmail_chestplate
+  mod: "V"
+  name: "Chain Chestplate"
+
+Items.chainmail_leggings
+  mod: "V"
+  name: "Chain Leggings"
+
+Items.chainmail_boots
+  mod: "V"
+  name: "Chain Boots"
+
+Items.iron_helmet
+  mod: "V"
+  name: "Iron Helmet"
+
+Items.iron_chestplate
+  mod: "V"
+  name: "Iron Chestplate"
+
+Items.iron_leggings
+  mod: "V"
+  name: "Iron Leggings"
+
+Items.iron_boots
+  mod: "V"
+  name: "Iron Boots"
+
+Items.diamond_helmet
+  mod: "V"
+  name: "Diamond Helmet"
+
+Items.diamond_chestplate
+  mod: "V"
+  name: "Diamond Chestplate"
+
+Items.diamond_leggings
+  mod: "V"
+  name: "Diamond Leggings"
+
+Items.diamond_boots
+  mod: "V"
+  name: "Diamond Boots"
+
+Items.golden_helmet
+  mod: "V"
+  name: "Golden Helmet"
+
+Items.golden_chestplate
+  mod: "V"
+  name: "Golden Chestplate"
+
+Items.golden_leggings
+  mod: "V"
+  name: "Golden Leggings"
+
+Items.golden_boots
+  mod: "V"
+  name: "Golden Boots"
+
+Items.flint
+  mod: "V"
+  name: "Flint"
+
+Items.porkchop
+  mod: "V"
+  name: "Raw Porkchop"
+
+Items.cooked_porkchop
+  mod: "V"
+  name: "Cooked Porkchop"
+
+Items.painting
+  mod: "V"
+  name: "Painting"
+
+Items.golden_apple
+  mod: "V"
+  meta: true
+  names:
+    0: "Golden Apple"
+
+Items.sign
+  mod: "V"
+  name: "Sign"
+
+Items.wooden_door
+  mod: "V"
+  name: "Wooden Door"
+
+Items.bucket
   mod: "V"
   name: "Bucket"
 
-Items.emerald:
+Items.water_bucket
+  mod: "V"
+  name: "Water Bucket"
+
+Items.lava_bucket
+  mod: "V"
+  name: "Lava Bucket"
+
+Items.minecart
+  mod: "V"
+  name: "Minecart"
+
+Items.saddle
+  mod: "V"
+  name: "Saddle"
+
+Items.iron_door
+  mod: "V"
+  name: "Iron Door"
+
+Items.redstone
+  mod: "V"
+  name: "Redstone"
+
+Items.snowball
+  mod: "V"
+  name: "Snowball"
+
+Items.boat
+  mod: "V"
+  name: "Boat"
+
+Items.leather
+  mod: "V"
+  name: "Leather"
+
+Items.milk_bucket
+  mod: "V"
+  name: "Milk"
+
+Items.brick
+  mod: "V"
+  name: "Brick"
+
+Items.clay_ball
+  mod: "V"
+  name: "Clay"
+
+Items.reeds
+  mod: "V"
+  name: "Sugar Canes"
+
+Items.paper
+  mod: "V"
+  name: "Paper"
+
+Items.book
+  mod: "V"
+  name: "Book"
+
+Items.slime_ball
+  mod: "V"
+  name: "Slimeball"
+
+Items.chest_minecart
+  mod: "V"
+  name: "Minecart with Chest"
+
+Items.furnace_minecart
+  mod: "V"
+  name: "Minecart with Furnace"
+
+Items.egg
+  mod: "V"
+  name: "Egg"
+
+Items.compass
+  mod: "V"
+  name: "Compass"
+
+Items.fishing_rod
+  mod: "V"
+  name: "Fishing Rod"
+
+Items.clock
+  mod: "V"
+  name: "Clock"
+
+Items.glowstone_dust
+  mod: "V"
+  name: "Glowstone Dust"
+
+Items.fish
+  mod: "V"
+  meta: true
+  names:
+    0: "Raw Fish"
+    1: "Raw Salmon"
+    2: "Clownfish"
+    3: "Pufferfish"
+    4: "Raw Fish"
+
+Items.cooked_fished
+  mod: "V"
+  meta: true
+  names:
+    0: "Cooked Fish"
+    1: "Cooked Salmon"
+    2: "Clownfish"
+    3: "Pufferfish"
+    4: "Cooked Fish"
+
+Items.dye
+  mod: "V"
+  meta: true
+  names:
+    0: "Ink Sac"
+    1: "Rose Red"
+    2: "Cactus Green"
+    3: "Cocoa Beans"
+    4: "Lapis Lazuli"
+    5: "Purple Dye"
+    6: "Cyan Dye"
+    7: "Light Gray Dye"
+    8: "Gray Dye"
+    9: "Pink Dye"
+    10: "Lime Dye"
+    11: "Dandelion Yellow"
+    12: "Light Blue Dye"
+    13: "Magenta Dye"
+    14: "Orange Dye"
+    15: "Bone Meal"
+
+Items.bone
+  mod: "V"
+  name: "Bone"
+
+Items.sugar
+  mod: "V"
+  name: "Sugar"
+
+Items.cake
+  mod: "V"
+  name: "Cake"
+
+Items.bed
+  mod: "V"
+  name: "Bed"
+
+Items.repeater
+  mod: "V"
+  name: "Redstone Repeater"
+
+Items.cookie
+  mod: "V"
+  name: "Cookie"
+
+Items.filled_map
+  mod: "V"
+  meta: true
+  names:
+    0: "Map"
+
+Items.shears
+  mod: "V"
+  name: "Shears"
+
+Items.melon
+  mod: "V"
+  name: "Melon"
+
+Items.pumpkin_seeds
+  mod: "V"
+  name: "Pumpkin Seeds"
+
+Items.melon_seeds
+  mod: "V"
+  name: "Melon Seeds"
+
+Items.beef
+  mod: "V"
+  name: "Raw Beef"
+
+Items.cooked_beef
+  mod: "V"
+  name: "Steak"
+
+Items.chicken
+  mod: "V"
+  name: "Raw Chicken"
+
+Items.cooked_chicken
+  mod: "V"
+  name: "Cooked Chicken"
+
+Items.rotten_flesh
+  mod: "V"
+  name: "Rotten Flesh"
+
+Items.ender_pearl
+  mod: "V"
+  name: "Ender Pearl"
+
+Items.blaze_rod
+  mod: "V"
+  name: "Blaze Rod"
+
+Items.ghast_tear
+  mod: "V"
+  name: "Ghast Tear"
+
+Items.gold_nugget
+  mod: "V"
+  name: "Gold Nugget"
+
+Items.nether_wart
+  mod: "V"
+  name: "Nether Wart"
+
+Items.potionitem
+  mod: "V"
+  meta: true
+  names:
+    0: "Water Bottle"
+    1: "Potion of Regeneration"
+    2: "Potion of Swiftness"
+    3: "Potion of Fire Resistance"
+    4: "Potion of Poison"
+    5: "Potion of Healing"
+    6: "Potion of Night Vision"
+    7: "Clear Potion"
+    8: "Potion of Weakness"
+    9: "Potion of Strength"
+    10: "Potion of Slowness"
+    11: "Diffuse Potion"
+    12: "Potion of Harming"
+    13: "Potion of Water Breathing"
+    14: "Potion of Invisibility"
+    15: "Thin Potion"
+    16: "Awkward Potion"
+    23: "Bungling Potion"
+    27: "Smooth Potion"
+    31: "Debonair Potion"
+    32: "Thick Potion"
+    39: "Charming Potion"
+    43: "Refined Potion"
+    47: "Sparkling Potion"
+    48: "Potent Potion"
+    55: "Rank Potion"
+    59: "Acrid Potion"
+    63: "Stinky Potion"
+    64: "Mundane Potion"
+    16385: "Splash Potion of Regeneration"
+    16386: "Splash Potion of Swiftness"
+    16387: "Splash Potion of Fire Resistance"
+    16388: "Splash Potion of Poison"
+    16389: "Splash Potion of Healing"
+    16390: "Splash Potion of Night Vision"
+    16392: "Splash Potion of Weakness"
+    16393: "Splash Potion of Strength"
+    16394: "Splash Potion of Slowness"
+    16396: "Splash Potion of Harming"
+    16397: "Splash Potion of Water Breathing"
+    16398: "Splash Potion of Invisibility"
+
+Items.glass_bottle
+  mod: "V"
+  name: "Glass Bottle"
+
+Items.spider_eye
+  mod: "V"
+  name: "Spider Eye"
+
+Items.fermented_spider_eye
+  mod: "V"
+  name: "Fermented Spider Eye"
+
+Items.blaze_powder
+  mod: "V"
+  name: "Blaze Powder"
+
+Items.magma_cream
+  mod: "V"
+  name: "Magma Cream"
+
+Items.brewing_stand
+  mod: "V"
+  name: "Brewing Stand"
+
+Items.cauldron
+  mod: "V"
+  name: "Cauldron"
+
+Items.ender_eye
+  mod: "V"
+  name: "Eye of Ender"
+
+Items.speckled_melon
+  mod: "V"
+  name: "Glistering Melon"
+
+Items.spawn_egg
+  mod: "V"
+  name: "Spawn Egg"
+
+Items.experience_bottle
+  mod: "V"
+  name: "Bottle o' Enchanting"
+
+Items.fire_charge
+  mod: "V"
+  name: "Fire Charge"
+
+Items.writable_book
+  mod: "V"
+  name: "Book and Quill"
+
+Items.written_book
+  mod: "V"
+  name: "Written Book"
+
+Items.emerald
   mod: "V"
   name: "Emerald"
 
+Items.item_frame
+  mod: "V"
+  name: "Item Frame"
+
+Items.flower_pot
+  mod: "V"
+  name: "Flower Pot"
+
+Items.carrot
+  mod: "V"
+  name: "Carrot"
+
+Items.potato
+  mod: "V"
+  name: "Potato"
+
+Items.baked_potato
+  mod: "V"
+  name: "Baked Potato"
+
+Items.poisonous_potato
+  mod: "V"
+  name: "Poisonous Potato"
+
+Items.map
+  mod: "V"
+  name: "Empty Map"
+
+Items.golden_carrot
+  mod: "V"
+  name: "Golden Carrot"
+
+Items.skull
+  mod: "V"
+  meta: true
+  names:
+    0: "Skeleton Skull"
+    1: "Wither Skeleton Skull"
+    2: "Zombie Head"
+    3: "Head"
+    4: "Creeper Head"
+    5: "Skeleton Skull"
+
+Items.carrot_on_a_stick
+  mod: "V"
+  name: "Carrot on a Stick"
+
+Items.nether_star
+  mod: "V"
+  name: "Nether Star"
+
+Items.pumpkin_pie
+  mod: "V"
+  name: "Pumpkin Pie"
+
+Items.fireworks
+  mod: "V"
+  name: "Firework Rocket"
+
+Items.firework_charge
+  mod: "V"
+  name: "Firework Star"
+
+Items.enchanted_book
+  mod: "V"
+  name: "Enchanted Book"
+
+Items.comparator
+  mod: "V"
+  name: "Redstone Comparator"
+
+Items.netherbrick
+  mod: "V"
+  name: "Nether Brick"
+
+Items.quartz
+  mod: "V"
+  name: "Nether Quartz"
+
+Items.tnt_minecart
+  mod: "V"
+  name: "Minecart with TNT"
+
+Items.hopper_minecart
+  mod: "V"
+  name: "Minecart with Hopper"
+
+Items.iron_horse_armor
+  mod: "V"
+  name: "Iron Horse Armor"
+
+Items.golden_horse_armor
+  mod: "V"
+  name: "Gold Horse Armor"
+
+Items.diamond_horse_armor
+  mod: "V"
+  name: "Diamond Horse Armor"
+
+Items.lead
+  mod: "V"
+  name: "Lead"
+
+Items.name_tag
+  mod: "V"
+  name: "Name Tag"
+
+Items.command_block_minecart
+  mod: "V"
+  name: "Minecart with Command Block"
+
+Items.record_13
+  mod: "V"
+  name: "Music Disc (13)"
+
+Items.record_cat
+  mod: "V"
+  name: "Music Disc (Cat)"
+
+Items.record_blocks
+  mod: "V"
+  name: "Music Disc (Blocks)"
+
+Items.record_chirp
+  mod: "V"
+  name: "Music Disc (Chirp)"
+
+Items.record_far
+  mod: "V"
+  name: "Music Disc (Far)"
+
+Items.record_mall
+  mod: "V"
+  name: "Music Disc (Mall)"
+
+Items.record_mellohi
+  mod: "V"
+  name: "Music Disc (Mellohi)"
+
+Items.record_stal
+  mod: "V"
+  name: "Music Disc (Stal)"
+
+Items.record_strad
+  mod: "V"
+  name: "Music Disc (Strad)"
+
+Items.record_ward
+  mod: "V"
+  name: "Music Disc (Ward)"
+
+Items.record_11
+  mod: "V"
+  name: "Music Disc (11)"
+
+Items.record_wait
+  mod: "V"
+  name: "Music Disc (Wait)"
+
 # Blocks
+
+Blocks.stone
+  mod: "V"
+  name: "Stone"
+
+Blocks.grass
+  mod: "V"
+  name: "Grass Block"
+
+Blocks.dirt
+  mod: "V"
+  meta: true
+  names:
+    0: "Dirt"
+    2: "Podzol"
+    3: "Dirt"
+
+Blocks.cobblestone
+  mod: "V"
+  name: "Cobblestone"
+
+Blocks.planks
+  mod: "V"
+  meta: true
+  names:
+    0: "Oak Wood Planks"
+    1: "Spruce Wood Planks"
+    2: "Birch Wood Planks"
+    3: "Jungle Wood Planks"
+    4: "Acacia Wood Planks"
+    5: "Dark Oak Wood Planks"
+    6: "Oak Wood Planks"
+
+Blocks.sapling
+  mod: "V"
+  meta: true
+  names:
+    0: "Oak Sapling"
+    1: "Spruce Sapling"
+    2: "Birch Sapling"
+    3: "Jungle Sapling"
+    4: "Acacia Sapling"
+    5: "Dark Oak Sapling"
+    6: "Oak Sapling"
+
+Blocks.bedrock
+  mod: "V"
+  name: "Bedrock"
+
+Blocks.flowing_water
+  mod: "V"
+  name: "Water"
+
+Blocks.water
+  mod: "V"
+  name: "Water"
+
+Blocks.flowing_lava
+  mod: "V"
+  name: "Lava"
+
+Blocks.lava
+  mod: "V"
+  name: "Lava"
+
+Blocks.sand
+  mod: "V"
+  meta: true
+  names:
+    0: "Sand"
+    1: "Red Sand"
+    2: "Sand"
+
+Blocks.gravel
+  mod: "V"
+  name: "Gravel"
+
+Blocks.gold_ore
+  mod: "V"
+  name: "Gold Ore"
+
+Blocks.iron_ore
+  mod: "V"
+  name: "Iron Ore"
+
+Blocks.coal_ore
+  mod: "V"
+  name: "Coal Ore"
+
+Blocks.log
+  mod: "V"
+  meta: true
+  names:
+    0: "Oak Wood"
+    1: "Spruce Wood"
+    2: "Birch Wood"
+    3: "Jungle Wood"
+    4: "Oak Wood"
+
+Blocks.log2
+  mod: "V"
+  meta: true
+  names:
+    0: "Acacia Wood"
+    1: "Dark Oak Wood"
+    2: "Acacia Wood"
+
+Blocks.leaves
+  mod: "V"
+  meta: true
+  names:
+    0: "Oak Leaves"
+    1: "Spruce Leaves"
+    2: "Birch Leaves"
+    3: "Jungle Leaves"
+    4: "Oak Leaves"
+
+Blocks.leaves2
+  mod: "V"
+  meta: true
+  names:
+    0: "Acacia Leaves"
+    1: "Dark Oak Leaves"
+    2: "Acacia Leaves"
+
+Blocks.sponge
+  mod: "V"
+  name: "Sponge"
+
+Blocks.glass
+  mod: "V"
+  name: "Glass"
+
+Blocks.lapis_ore
+  mod: "V"
+  name: "Lapis Lazuli Ore"
+
+Blocks.lapis_block
+  mod: "V"
+  name: "Lapis Lazuli Block"
+
+Blocks.dispenser
+  mod: "V"
+  name: "Dispenser"
+
+Blocks.sandstone
+  mod: "V"
+  meta: true
+  names:
+    0: "Sandstone"
+    1: "Chiseled Sandstone"
+    2: "Smooth Sandstone"
+    3: "Sandstone"
+
+Blocks.noteblock
+  mod: "V"
+  name: "Note Block"
+
+Blocks.golden_rail
+  mod: "V"
+  name: "Powered Rail"
+
+Blocks.detector_rail
+  mod: "V"
+  name: "Detector Rail"
+
+Blocks.sticky_piston
+  mod: "V"
+  name: "Sticky Piston"
+
+Blocks.web
+  mod: "V"
+  name: "Cobweb"
+
+Blocks.tallgrass
+  mod: "V"
+  meta: true
+  names:
+    0: "Shrub"
+    1: "Grass"
+    2: "Fern"
+    3: "Grass"
+
+Blocks.deadbush
+  mod: "V"
+  name: "Dead Bush"
+
+Blocks.piston
+  mod: "V"
+  name: "Piston"
+
+Blocks.wool
+  mod: "V"
+  meta: true
+  names:
+    0: "Wool"
+    1: "Orange Wool"
+    2: "Magenta Wool"
+    3: "Light Blue Wool"
+    4: "Yellow Wool"
+    5: "Lime Wool"
+    6: "Pink Wool"
+    7: "Gray Wool"
+    8: "Light Gray Wool"
+    9: "Cyan Wool"
+    10: "Purple Wool"
+    11: "Blue Wool"
+    12: "Brown Wool"
+    13: "Green Wool"
+    14: "Red Wool"
+    15: "Black Wool"
+
+Blocks.yellow_flower
+  mod: "V"
+  meta: true
+  names:
+    0: "Dandelion"
+
+Blocks.red_flower
+  mod: "V"
+  meta: true
+  names:
+    0: "Poppy"
+    1: "Blue Orchid"
+    2: "Allium"
+    3: "Azure Bluet"
+    4: "Red Tulip"
+    5: "Orange Tulip"
+    6: "White Tulip"
+    7: "Pink Tulip"
+    8: "Oxeye Daisy"
+    9: "Poppy"
+
+Blocks.brown_mushroom
+  mod: "V"
+  name: "Mushroom"
+
+Blocks.red_mushroom
+  mod: "V"
+  name: "Mushroom"
+
+Blocks.gold_block
+  mod: "V"
+  name: "Block of Gold"
+
+Blocks.iron_block
+  mod: "V"
+  name: "Block of Iron"
+
+Blocks.double_stone_slab
+  mod: "V"
+  meta: true
+  names:
+    0: "Stone Slab"
+    1: "Sandstone Slab"
+    2: "Wooden Slab"
+    3: "Cobblestone Slab"
+    4: "Bricks Slab"
+    5: "Stone Bricks Slab"
+    6: "Nether Brick Slab"
+    7: "Quartz Slab"
+    8: "Stone Slab"
+
+Blocks.stone_slab
+  mod: "V"
+  meta: true
+  names:
+    0: "Stone Slab"
+    1: "Sandstone Slab"
+    2: "Wooden Slab"
+    3: "Cobblestone Slab"
+    4: "Bricks Slab"
+    5: "Stone Bricks Slab"
+    6: "Nether Brick Slab"
+    7: "Quartz Slab"
+    8: "Stone Slab"
+
+Blocks.brick_block
+  mod: "V"
+  name: "Bricks"
+
+Blocks.tnt
+  mod: "V"
+  name: "TNT"
+
+Blocks.bookshelf
+  mod: "V"
+  name: "Bookshelf"
+
+Blocks.mossy_cobblestone
+  mod: "V"
+  name: "Moss Stone"
+
+Blocks.obsidian
+  mod: "V"
+  name: "Obsidian"
+
+Blocks.torch
+  mod: "V"
+  name: "Torch"
+
+Blocks.fire
+  mod: "V"
+  name: "Fire"
+
+Blocks.mob_spawner
+  mod: "V"
+  meta: true
+  names:
+    0: "Monster Spawner"
+
+Blocks.oak_stairs
+  mod: "V"
+  name: "Oak Wood Stairs"
+
+Blocks.chest
+  mod: "V"
+  name: "Chest"
+
+Blocks.diamond_ore
+  mod: "V"
+  name: "Diamond Ore"
+
+Blocks.diamond_block
+  mod: "V"
+  name: "Block of Diamond"
+
+Blocks.crafting_table
+  mod: "V"
+  name: "Crafting Table"
+
+Blocks.farmland
+  mod: "V"
+  name: "Farmland"
+
+Blocks.furnace
+  mod: "V"
+  name: "Furnace"
+
+Blocks.lit_furnace
+  mod: "V"
+  name: "Furnace"
+
+Blocks.ladder
+  mod: "V"
+  name: "Ladder"
+
+Blocks.rail
+  mod: "V"
+  name: "Rail"
+
+Blocks.stone_stairs
+  mod: "V"
+  name: "Stone Stairs"
+
+Blocks.lever
+  mod: "V"
+  name: "Lever"
+
+Blocks.stone_pressure_plate
+  mod: "V"
+  name: "Pressure Plate"
+
+Blocks.wooden_pressure_plate
+  mod: "V"
+  name: "Pressure Plate"
+
+Blocks.redstone_ore
+  mod: "V"
+  name: "Redstone Ore"
+
+Blocks.redstone_torch
+  mod: "V"
+  name: "Redstone Torch"
+
+Blocks.stone_button
+  mod: "V"
+  name: "Button"
+
+Blocks.snow_layer
+  mod: "V"
+  meta: true
+  names:
+    0: "Snow"
+
+Blocks.ice
+  mod: "V"
+  name: "Ice"
+
+Blocks.snow
+  mod: "V"
+  name: "Snow"
+
+Blocks.cactus
+  mod: "V"
+  name: "Cactus"
+
+Blocks.clay
+  mod: "V"
+  name: "Clay"
+
+Blocks.jukebox
+  mod: "V"
+  name: "Jukebox"
+
+Blocks.fence
+  mod: "V"
+  name: "Fence"
+
+Blocks.pumpkin
+  mod: "V"
+  name: "Pumpkin"
+
+Blocks.netherrack
+  mod: "V"
+  name: "Netherrack"
+
+Blocks.soul_sand
+  mod: "V"
+  name: "Soul Sand"
+
+Blocks.glowstone
+  mod: "V"
+  name: "Glowstone"
+
+Blocks.portal
+  mod: "V"
+  name: "Portal"
+
+Blocks.lit_pumpkin
+  mod: "V"
+  name: "Jack o'Lantern"
+
+Blocks.trapdoor
+  mod: "V"
+  name: "Trapdoor"
+
+Blocks.monster_egg
+  mod: "V"
+  meta: true
+  names:
+    0: "Stone Monster Egg"
+    1: "Cobblestone Monster Egg"
+    2: "Stone Brick Monster Egg"
+    3: "Mossy Stone Brick Monster Egg"
+    4: "Cracked Stone Brick Monster Egg"
+    5: "Chiseled Stone Brick Monster Egg"
+    6: "Stone Monster Egg"
+
+Blocks.stonebrick
+  mod: "V"
+  meta: true
+  names:
+    0: "Stone Bricks"
+    1: "Mossy Stone Bricks"
+    2: "Cracked Stone Bricks"
+    3: "Chiseled Stone Bricks"
+    4: "Stone Bricks"
+
+Blocks.brown_mushroom_block
+  mod: "V"
+  name: "Mushroom"
+
+Blocks.red_mushroom_block
+  mod: "V"
+  name: "Mushroom"
+
+Blocks.iron_bars
+  mod: "V"
+  name: "Iron Bars"
+
+Blocks.glass_pane
+  mod: "V"
+  name: "Glass Pane"
+
+Blocks.melon_block
+  mod: "V"
+  name: "Melon"
+
+Blocks.vine
+  mod: "V"
+  name: "Vines"
+
+Blocks.fence_gate
+  mod: "V"
+  name: "Fence Gate"
+
+Blocks.brick_stairs
+  mod: "V"
+  name: "Brick Stairs"
+
+Blocks.stone_brick_stairs
+  mod: "V"
+  name: "Stone Brick Stairs"
+
+Blocks.mycelium
+  mod: "V"
+  name: "Mycelium"
+
+Blocks.waterlily
+  mod: "V"
+  name: "Lily Pad"
+
+Blocks.nether_brick
+  mod: "V"
+  name: "Nether Brick"
+
+Blocks.nether_brick_fence
+  mod: "V"
+  name: "Nether Brick Fence"
+
+Blocks.nether_brick_stairs
+  mod: "V"
+  name: "Nether Brick Stairs"
+
+Blocks.enchanting_table
+  mod: "V"
+  name: "Enchantment Table"
+
+Blocks.end_portal_frame
+  mod: "V"
+  name: "End Portal"
+
+Blocks.end_stone
+  mod: "V"
+  name: "End Stone"
+
+Blocks.dragon_egg
+  mod: "V"
+  name: "Dragon Egg"
+
+Blocks.redstone_lamp
+  mod: "V"
+  name: "Redstone Lamp"
+
+Blocks.double_wooden_slab
+  mod: "V"
+  meta: true
+  names:
+    0: "Oak Wood Slab"
+    1: "Spruce Wood Slab"
+    2: "Birch Wood Slab"
+    3: "Jungle Wood Slab"
+    4: "Acacia Wood Slab"
+    5: "Dark Oak Wood Slab"
+    6: "Oak Wood Slab"
+
+Blocks.wooden_slab
+  mod: "V"
+  meta: true
+  names:
+    0: "Oak Wood Slab"
+    1: "Spruce Wood Slab"
+    2: "Birch Wood Slab"
+    3: "Jungle Wood Slab"
+    4: "Acacia Wood Slab"
+    5: "Dark Oak Wood Slab"
+    6: "Oak Wood Slab"
+
+Blocks.cocoa
+  mod: "V"
+  name: "Cocoa"
+
+Blocks.sandstone_stairs
+  mod: "V"
+  name: "Sandstone Stairs"
+
+Blocks.emerald_ore
+  mod: "V"
+  name: "Emerald Ore"
+
+Blocks.ender_chest
+  mod: "V"
+  name: "Ender Chest"
+
+Blocks.tripwire_hook
+  mod: "V"
+  name: "Tripwire Hook"
+
+Blocks.emerald_block
+  mod: "V"
+  name: "Block of Emerald"
+
+Blocks.spruce_stairs
+  mod: "V"
+  name: "Spruce Wood Stairs"
+
+Blocks.birch_stairs
+  mod: "V"
+  name: "Birch Wood Stairs"
+
+Blocks.jungle_stairs
+  mod: "V"
+  name: "Jungle Wood Stairs"
+
+Blocks.command_block
+  mod: "V"
+  name: "Command Block"
+
+Blocks.beacon
+  mod: "V"
+  name: "Beacon"
+
+Blocks.cobblestone_wall
+  mod: "V"
+  meta: true
+  names:
+    0: "Cobblestone Wall"
+    1: "Mossy Cobblestone Wall"
+    2: "Cobblestone Wall"
+
+Blocks.carrots
+  mod: "V"
+  name: "Carrots"
+
+Blocks.potatoes
+  mod: "V"
+  name: "Potatoes"
+
+Blocks.wooden_button
+  mod: "V"
+  name: "Button"
+
+Blocks.anvil
+  mod: "V"
+  meta: true
+  names:
+    0: "Anvil"
+    1: "Slightly Damaged Anvil"
+    2: "Very Damaged Anvil"
+    3: "Anvil"
+
+Blocks.trapped_chest
+  mod: "V"
+  name: "Trapped Chest"
+
+Blocks.light_weighted_pressure_plate
+  mod: "V"
+  name: "Weighted Pressure Plate (Light)"
+
+Blocks.heavy_weighted_pressure_plate
+  mod: "V"
+  name: "Weighted Pressure Plate (Heavy)"
+
+Blocks.daylight_detector
+  mod: "V"
+  name: "Daylight Sensor"
+
+Blocks.redstone_block
+  mod: "V"
+  name: "Block of Redstone"
+
+Blocks.quartz_ore
+  mod: "V"
+  name: "Nether Quartz Ore"
+
+Blocks.hopper
+  mod: "V"
+  name: "Hopper"
+
+Blocks.quartz_block
+  mod: "V"
+  meta: true
+  names:
+    0: "Block of Quartz"
+    1: "Chiseled Quartz Block"
+    2: "Pillar Quartz Block"
+    3: "Block of Quartz"
+
+Blocks.quartz_stairs
+  mod: "V"
+  name: "Quartz Stairs"
+
+Blocks.activator_rail
+  mod: "V"
+  name: "Activator Rail"
+
+Blocks.dropper
+  mod: "V"
+  name: "Dropper"
+
+Blocks.stained_hardened_clay
+  mod: "V"
+  meta: true
+  names:
+    0: "White Stained Clay"
+    1: "Orange Stained Clay"
+    2: "Magenta Stained Clay"
+    3: "Light Blue Stained Clay"
+    4: "Yellow Stained Clay"
+    5: "Lime Stained Clay"
+    6: "Pink Stained Clay"
+    7: "Gray Stained Clay"
+    8: "Light Gray Stained Clay"
+    9: "Cyan Stained Clay"
+    10: "Purple Stained Clay"
+    11: "Blue Stained Clay"
+    12: "Brown Stained Clay"
+    13: "Green Stained Clay"
+    14: "Red Stained Clay"
+    15: "Black Stained Clay"
+
+Blocks.hay_block
+  mod: "V"
+  name: "Hay Bale"
+
+Blocks.carpet
+  mod: "V"
+  meta: true
+  names:
+    0: "Carpet"
+    1: "Orange Carpet"
+    2: "Magenta Carpet"
+    3: "Light Blue Carpet"
+    4: "Yellow Carpet"
+    5: "Lime Carpet"
+    6: "Pink Carpet"
+    7: "Gray Carpet"
+    8: "Light Gray Carpet"
+    9: "Cyan Carpet"
+    10: "Purple Carpet"
+    11: "Blue Carpet"
+    12: "Brown Carpet"
+    13: "Green Carpet"
+    14: "Red Carpet"
+    15: "Black Carpet"
+
+Blocks.hardened_clay
+  mod: "V"
+  name: "Hardened Clay"
+
+Blocks.coal_block
+  mod: "V"
+  name: "Block of Coal"
+
+Blocks.packed_ice
+  mod: "V"
+  name: "Packed Ice"
+
+Blocks.acacia_stairs
+  mod: "V"
+  name: "Acacia Wood Stairs"
+
+Blocks.dark_oak_stairs
+  mod: "V"
+  name: "Dark Oak Wood Stairs"
+
+Blocks.double_plant
+  mod: "V"
+  meta: true
+  names:
+    0: "Sunflower"
+    1: "Lilac"
+    2: "Double Tallgrass"
+    3: "Large Fern"
+    4: "Rose Bush"
+    5: "Peony"
+    6: "Sunflower"
+
+Blocks.stained_glass
+  mod: "V"
+  meta: true
+  names:
+    0: "White Stained Glass"
+    1: "Orange Stained Glass"
+    2: "Magenta Stained Glass"
+    3: "Light Blue Stained Glass"
+    4: "Yellow Stained Glass"
+    5: "Lime Stained Glass"
+    6: "Pink Stained Glass"
+    7: "Gray Stained Glass"
+    8: "Light Gray Stained Glass"
+    9: "Cyan Stained Glass"
+    10: "Purple Stained Glass"
+    11: "Blue Stained Glass"
+    12: "Brown Stained Glass"
+    13: "Green Stained Glass"
+    14: "Red Stained Glass"
+    15: "Black Stained Glass"
+
+Blocks.stained_glass_pane
+  mod: "V"
+  meta: true
+  names:
+    0: "White Stained Glass Pane"
+    1: "Orange Stained Glass Pane"
+    2: "Magenta Stained Glass Pane"
+    3: "Light Blue Stained Glass Pane"
+    4: "Yellow Stained Glass Pane"
+    5: "Lime Stained Glass Pane"
+    6: "Pink Stained Glass Pane"
+    7: "Gray Stained Glass Pane"
+    8: "Light Gray Stained Glass Pane"
+    9: "Cyan Stained Glass Pane"
+    10: "Purple Stained Glass Pane"
+    11: "Blue Stained Glass Pane"
+    12: "Brown Stained Glass Pane"
+    13: "Green Stained Glass Pane"
+    14: "Red Stained Glass Pane"
+    15: "Black Stained Glass Pane"
 
 # Add more mods here following the same syntax.
 
