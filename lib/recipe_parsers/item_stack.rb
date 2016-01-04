@@ -23,11 +23,12 @@ module RecipeParsers
       if map['meta']
         gc = "{{Gc|mod=#{map['mod']}|dis=false|#{map['names'][@meta.to_i]}"
         gc << "|#{@size}" if !@size.nil? && @size.to_i > 1
-        gc << '}}'
       else
         gc = "{{Gc|mod=#{map['mod']}|dis=false|#{map['name']}"
         gc << "|#{@size}" if !@size.nil? && @size.to_i > 1
       end
+
+      gc << '}}'
 
       gc
     end
