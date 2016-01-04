@@ -42,20 +42,20 @@ module RecipeParsers
       itemstack.gsub!(';', '')
       itemstack_array = itemstack.split(', ')
       case itemstack_array.size
-        when 1
-          @item = itemstack_array[0]
-          @size = 1
-          @meta = 0
-        when 2
-          @item = itemstack_array[0]
-          @size = itemstack_array[1]
-          @meta = 0
-        when 3
-          @item = itemstack_array[0]
-          @size = itemstack_array[1]
-          @meta = itemstack_array[2]
-        else
-          # This should never happen.
+      when 1
+        @item = itemstack_array[0]
+        @size = 1
+        @meta = 0
+      when 2
+        @item = itemstack_array[0]
+        @size = itemstack_array[1]
+        @meta = 0
+      when 3
+        @item = itemstack_array[0]
+        @size = itemstack_array[1]
+        @meta = itemstack_array[2]
+      else
+        # This should never happen.
       end
       self
     end
