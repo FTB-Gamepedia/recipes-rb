@@ -2,7 +2,7 @@
 
 # Vanilla
 # Items
-Items.iron_shovel::
+Items.iron_shovel:
   mod: "V"
   name: "Iron Shovel"
 
@@ -45,7 +45,7 @@ Items.iron_ingot:
   mod: "V"
   name: "Iron Ingot"
 
-Items.gold_ingot::
+Items.gold_ingot:
   mod: "V"
   name: "Gold Ingot"
 
