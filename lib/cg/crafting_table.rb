@@ -1,16 +1,40 @@
 module Cg
   class CraftingTable
+    # @return [String] The string representation of the Cg. See {#to_s}.
     attr_reader :string
+
+    # @return [String] The A1 parameter value.
     attr_accessor :a1
+
+    # @return [String] The B1 parameter value.
     attr_accessor :b1
+
+    # @return [String] The C1 parameter value.
     attr_accessor :c1
+
+    # @return [String] The A2 parameter value.
     attr_accessor :a2
+
+    # @return [String] The B2 parameter value.
     attr_accessor :b2
+
+    # @return [String] The C2 parameter value.
     attr_accessor :c2
+
+    # @return [String] The A3 parameter value.
     attr_accessor :a3
+
+    # @return [String] The B3 parameter value.
     attr_accessor :b3
+
+    # @return [String] The C3 parameter value.
     attr_accessor :c3
+
+    # @return [String] The O parameter value.
     attr_accessor :output
+
+    # @return [Boolean] Whether the shapeless parameter is set.
+    attr_accessor :shapeless
 
     # Creates a new CraftingTable object.
     # @param opts [String/Hash<Symbol, Key>] The full Cg/Crafting Table template call string, or a hash representation.
@@ -37,6 +61,7 @@ module Cg
         @b3 = get_param('B3')
         @c3 = get_param('C3')
         @output = string[/\|O=(.*?)\n\}\}/m, 1]
+        @shapeless = opts.include?('|shapeless=true')
       elsif opts.is_a?(Hash)
         @a1 = opts[:a1]
         @b1 = opts[:b1]
@@ -48,6 +73,7 @@ module Cg
         @b3 = opts[:b3]
         @c3 = opts[:c3]
         @output = opts[:o]
+        @shapeless = opts.key?(:shapeless)
       end
     end
 
@@ -66,6 +92,7 @@ module Cg
       str << "|B3=#{@b3}\n" unless @b3.nil?
       str << "|C3=#{@c3}\n" unless @c3.nil?
       str << "|O=#{@output}\n" unless @output.nil?
+      str << "|shapeless=true\n" if @shapeless
       str << '}}'
       @string = str
       str
@@ -73,8 +100,13 @@ module Cg
 
     # Merges this crafting table with the other one.
     # @param other [Cg::CraftingTable] The other crafting table to merge with.
-    # @return [String] The merged crafting grids.
+    # @return [String] The merged crafting grids. If one is shapeless and the other is not, it will not merge them.
+    #   In that case, it will simply return the two Cg's sequentially: {{Cg/Crafting Table}}\n\n{{Cg/Crafting Table}}.
     def merge(other)
+      if @shapeless != other.shapeless
+        return "#{to_s}\n\n#{other.to_s}"
+      end
+      
       str = "{{Cg/Crafting Table\n"
       str << merge_params('A1', @a1, other.a1)
       str << merge_params('B1', @b1, other.b1)
@@ -86,6 +118,7 @@ module Cg
       str << merge_params('B3', @b3, other.b3)
       str << merge_params('C3', @c3, other.c3)
       str << merge_params('O', @output, other.output)
+      str << "|shapeless=true\n" if @shapeless
       str << '}}'
       str
     end
