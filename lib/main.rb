@@ -2,7 +2,7 @@ require_relative 'recipe_parsers/shaped_ore'
 
 def go(recipe)
   if recipe =~ /^GameRegistry\.addRecipe\(new ShapedOreRecipe\(/
-    puts RecipeParsers::ShapedOreRecipeParser.new(recipe).parse
+    puts RecipeParsers::ShapedOreRecipeParser.new(recipe).parse.to_s
     puts ''
   else
     puts 'That recipe type is not currently supported. Please submit a PR so we can support it.\n'

@@ -106,7 +106,7 @@ module Cg
       if @shapeless != other.shapeless
         return "#{to_s}\n\n#{other.to_s}"
       end
-      
+
       str = "{{Cg/Crafting Table\n"
       str << merge_params('A1', @a1, other.a1)
       str << merge_params('B1', @b1, other.b1)

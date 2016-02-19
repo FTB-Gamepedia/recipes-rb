@@ -1,6 +1,7 @@
 require 'yaml'
 require 'array_utility'
 require_relative 'item_stack'
+require_relative '../cg/crafting_table'
 
 module RecipeParsers
   class ShapedOreRecipeParser
@@ -27,7 +28,7 @@ module RecipeParsers
     end
 
     # Parses the ShapedOreRecipe into the Cg/Crafting Table recipe that can be put on the wiki. Prints it to the CL.
-    # @return [String] The {{Cg/Crafting Table}} template generated.
+    # @return [Cg::CraftingTable] The Cg/Crafting Table object generated.
     def parse
       actual_recipe = @recipe.split('new ShapedOreRecipe(')[1]
       # actual_recipe.gsub!(/\s/, '')
@@ -70,42 +71,41 @@ module RecipeParsers
         end
       end
 
-      template = "{{Cg/Crafting Table\n"
+      template = Cg::CraftingTable.new('')
       @input.each_with_index do |line, index|
         line.gsub!('"', '')
         line.each_char.with_index do |c, loc|
           next if c == ' '
           case loc
           when 0
-            letter = 'A'
+            letter = 'a'
           when 1
-            letter = 'B'
+            letter = 'b'
           when 2
-            letter = 'C'
+            letter = 'c'
           else
-            letter = '?'
+            raise ArgumentError
           end
 
-          template << "|#{letter}#{index + 1}=#{@things[c]}\n"
+          symbol = "#{letter}#{index + 1}".to_sym
+          template.send("#{symbol}=", @things[c])
         end
       end
 
       if MAPPINGS.key?(@output)
         map = MAPPINGS[@output]
         gc = "{{Gc|mod=#{map['mod']}|dis=false|#{map['name']}}}"
-        template << "|O=#{gc}\n"
+        template.output = gc
       else
         if @output =~ /ItemStack/
           is = RecipeParsers::ItemStack.new(@output)
           if MAPPINGS.key?(is.item)
-            template << "|O=#{is.gc(MAPPINGS[is.item])}\n"
+            template.output = "#{is.gc(MAPPINGS[is.item])}"
           end
         else
-          template << "|O=UNKNOWN MAPPING FOR #{@output}!\n"
+          template.output = "UNKNOWN MAPPING FOR #{@output}!"
         end
       end
-
-      template << '}}'
 
       template
     end
