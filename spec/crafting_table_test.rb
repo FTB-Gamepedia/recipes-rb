@@ -30,5 +30,18 @@ class CraftingTableTest < Test::Unit::TestCase
     assert_equal(cg, Cg::CraftingTable.new(cg_string).remove_duplicates!)
     assert_equal(cg_test, Cg::CraftingTable.new(cg_string).remove_duplicates)
     assert_equal(cg_test, Cg::CraftingTable.new(cg_string).remove_duplicates!)
+
+    cg_string = '{{Cg/CraftingTable
+|A1={{G|Iron Ingot}}
+|O={{G|Iron Nugget|9}}
+}}'
+    cg_string_cg = Cg::CraftingTable.new(cg_string)
+    cg_string_cg_test = '{{Cg/CraftingTable
+|A1={{Gc|mod=V|dis=false|Iron Ingot}}
+|O={{Gc|mod=V|dis=false|Iron Nugget|9}}
+}}'
+    cg_string_cg_test_cg = Cg::CraftingTable.new(cg_string_cg_test)
+    cg_string_cg.map! { |x| x.gsub!('{{G|', '{{Gc|mod=V|dis=false|') }
+    assert_equal(cg_string_cg, cg_string_cg_test_cg)
   end
 end

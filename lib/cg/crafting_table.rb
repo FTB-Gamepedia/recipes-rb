@@ -125,6 +125,20 @@ module Cg
       str
     end
 
+    # Invokes the given block for each parameter, except shapeless, modifying the values in-place.
+    def map!
+      yield @a1 if @a1
+      yield @b1 if @b1
+      yield @c1 if @c1
+      yield @a2 if @a2
+      yield @b2 if @b2
+      yield @c2 if @c2
+      yield @a3 if @a3
+      yield @b3 if @b3
+      yield @c3 if @c3
+      yield @output if @output
+    end
+
     # Removes the duplicated (example, if it was only {{O|ingotIron}}{{O|ingotIron}} with nothing after) entries in
     # self. Modifies the Cg in place.
     # @return [Cg::CraftingTable] The modified Cg.
