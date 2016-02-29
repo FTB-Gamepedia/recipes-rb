@@ -74,6 +74,7 @@ module Cg
         @c3 = opts[:c3]
         @output = opts[:o]
         @shapeless = opts.key?(:shapeless)
+        to_s
       end
     end
 
@@ -102,6 +103,7 @@ module Cg
     # @param other [Cg::CraftingTable] The other crafting table to merge with.
     # @return [String] The merged crafting grids. If one is shapeless and the other is not, it will not merge them.
     #   In that case, it will simply return the two Cg's sequentially: {{Cg/Crafting Table}}\n\n{{Cg/Crafting Table}}.
+    #   Be careful when repeatedly merging because of this.
     def merge(other)
       if @shapeless != other.shapeless
         return "#{to_s}\n\n#{other.to_s}"
@@ -123,6 +125,42 @@ module Cg
       str
     end
 
+    # Removes the duplicated (example, if it was only {{O|ingotIron}}{{O|ingotIron}} with nothing after) entries in
+    # self. Modifies the Cg in place.
+    # @return [Cg::CraftingTable] The modified Cg.
+    def remove_duplicates!
+      @a1 = remove_duplicate(@a1)
+      @b1 = remove_duplicate(@b1)
+      @c1 = remove_duplicate(@c1)
+      @a2 = remove_duplicate(@a2)
+      @b2 = remove_duplicate(@b2)
+      @c2 = remove_duplicate(@c2)
+      @a3 = remove_duplicate(@a3)
+      @b3 = remove_duplicate(@b3)
+      @c3 = remove_duplicate(@c3)
+      @output = remove_duplicate(@output)
+      to_s
+      self
+    end
+
+    # Creates a new Cg with all duplicated entries removed.
+    # @see #{remove_duplicates!} for in-place modification.
+    # @return [Cg::CraftingTable] A new Cg::CraftingTable.
+    def remove_duplicates
+      a1 = remove_duplicate(@a1)
+      b1 = remove_duplicate(@b1)
+      c1 = remove_duplicate(@c1)
+      a2 = remove_duplicate(@a2)
+      b2 = remove_duplicate(@b2)
+      c2 = remove_duplicate(@c2)
+      a3 = remove_duplicate(@a3)
+      b3 = remove_duplicate(@b3)
+      c3 = remove_duplicate(@c3)
+      output = remove_duplicate(@output)
+
+      Cg::CraftingTable.new(a1: a1, b1: b1, c1: c1, a2: a2, b2: b2, c2: c2, a3: a3, b3: b3, c3: c3, o: output)
+    end
+
     # Merges two crafting grids together.
     # @param one [Cg::CraftingTable] The first crafting table object.
     # @param two [Cg::CraftingTable] The second crafting table object.
@@ -131,7 +169,26 @@ module Cg
       one.merge(two)
     end
 
+    def ==(other)
+      return @a1 == other.a1 && @b1 == other.b1 && @c1 == other.c1 &&
+             @a2 == other.a2 && @b2 == other.b2 && @c2 == other.c2 &&
+             @a3 == other.a3 && @b3 == other.b3 && @c3 == other.c3 &&
+             @shapeless == other.shapeless && @output == other.output
+    end
+
     private
+
+    # Removes the duplicated parameters in the param string.
+    # @param param [String] The Cg parameter.
+    # @return [String] The new parameter.
+    def remove_duplicate(param)
+      return nil if param.nil?
+      ary = param.split('}}').map! { |x| x << '}}' }
+      if ary.uniq.length <= 1
+        return ary[0]
+      end
+      param
+    end
 
     # Merges two parameter calls together.
     # @param param [String] The parameter name.

@@ -107,6 +107,9 @@ module RecipeParsers
         end
       end
 
+      # Initialize the @string variable, since we defined it as '' earlier.
+      template.to_s
+
       template
     end
   end
